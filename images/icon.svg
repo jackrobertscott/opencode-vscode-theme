@@ -1,29 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="OpenCode Theme icon">
-  <defs>
-    <linearGradient id="panel" x1="28" y1="28" x2="228" y2="228" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#141414"/>
-      <stop offset="1" stop-color="#0a0a0a"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="58" y1="54" x2="198" y2="202" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fab283"/>
-      <stop offset="0.52" stop-color="#9d7cd8"/>
-      <stop offset="1" stop-color="#56b6c2"/>
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.98 0 1 0 0 0.70 0 0 1 0 0.51 0 0 0 0.42 0" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <rect width="256" height="256" rx="56" fill="#0a0a0a"/>
-  <rect x="23" y="23" width="210" height="210" rx="38" fill="url(#panel)" stroke="#282828" stroke-width="2"/>
-  <path d="M72 93L42 128l30 35" fill="none" stroke="#fab283" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-  <path d="M184 93l30 35-30 35" fill="none" stroke="#56b6c2" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-  <path d="M145 68l-34 120" fill="none" stroke="#9d7cd8" stroke-width="15" stroke-linecap="round" filter="url(#glow)"/>
-  <circle cx="78" cy="198" r="7" fill="#7fd88f"/>
-  <circle cx="101" cy="198" r="7" fill="#e5c07b"/>
-  <circle cx="124" cy="198" r="7" fill="#e06c75"/>
+  <rect width="256" height="256" fill="#0a0a0a"/>
+  <path d="M80 176H40V136H80V176Z" fill="#4B4646"/>
+  <path d="M80 116H40V176H80V116ZM100 196H20V96H100V196Z" fill="#B7B1B1"/>
+  <path d="M216 176H156V136H216V176Z" fill="#4B4646"/>
+  <path d="M216 116H156V176H216V196H136V96H216V116Z" fill="#F1ECEC"/>
+  <path d="M20 76H80V56H100V76H216V56H236V76H256V96H0V76H20Z" fill="#282828"/>
+  <path d="M40 56H80V76H40V56ZM156 56H216V76H156V56Z" fill="#fab283"/>
+  <path d="M20 216H100V236H20V216ZM136 216H236V236H136V216Z" fill="#9d7cd8"/>
 </svg>
