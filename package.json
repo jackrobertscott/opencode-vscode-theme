@@ -1,0 +1,56 @@
+{
+  "name": "opencode-vscode-theme",
+  "displayName": "OpenCode Theme (Unofficial)",
+  "description": "An unofficial VS Code theme inspired by OpenCode's default dark interface and syntax palette.",
+  "version": "0.1.0",
+  "publisher": "jackrobertscott",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackrobertscott/opencode-vscode-theme.git"
+  },
+  "homepage": "https://github.com/jackrobertscott/opencode-vscode-theme#readme",
+  "bugs": {
+    "url": "https://github.com/jackrobertscott/opencode-vscode-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "opencode",
+    "open code",
+    "theme",
+    "dark theme",
+    "color theme",
+    "terminal theme",
+    "ai coding",
+    "agentic coding",
+    "peach",
+    "purple",
+    "cyan"
+  ],
+  "galleryBanner": {
+    "color": "#0a0a0a",
+    "theme": "dark"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "latest"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "OpenCode",
+        "uiTheme": "vs-dark",
+        "path": "./themes/opencode-color-theme.json"
+      }
+    ]
+  }
+}
