@@ -46,7 +46,7 @@
     "progressBar.background": "#fab283",
     "list.activeSelectionBackground": "#282828",
     "list.activeSelectionForeground": "#eeeeee",
-    "list.dropBackground": "#20303b",
+    "list.dropBackground": "#20303b99",
     "list.focusBackground": "#1e1e1e",
     "list.focusForeground": "#eeeeee",
     "list.highlightForeground": "#fab283",
@@ -186,8 +186,8 @@
     "gitDecoration.ignoredResourceForeground": "#606060",
     "gitDecoration.modifiedResourceForeground": "#fab283",
     "gitDecoration.untrackedResourceForeground": "#56b6c2",
-    "diffEditor.insertedTextBackground": "#20303b",
-    "diffEditor.removedTextBackground": "#37222c",
+    "diffEditor.insertedTextBackground": "#20303b99",
+    "diffEditor.removedTextBackground": "#37222c99",
     "diffEditorGutter.insertedLineBackground": "#1b2b34",
     "diffEditorGutter.removedLineBackground": "#2d1f26",
     "settings.headerForeground": "#fab283",
@@ -214,7 +214,8 @@
         "support.type.property-name.css"
       ],
       "settings": {
-        "foreground": "#9d7cd8"
+        "foreground": "#9d7cd8",
+        "fontStyle": "italic"
       }
     },
     {

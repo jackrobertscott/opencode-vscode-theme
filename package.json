@@ -38,6 +38,7 @@
     "theme": "dark"
   },
   "scripts": {
+    "generate": "node scripts/generate-theme.mjs",
     "package": "vsce package",
     "publish": "vsce publish"
   },
