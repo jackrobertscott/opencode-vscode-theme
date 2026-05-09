@@ -100,9 +100,9 @@
     "editorCursor.foreground": "#fab283",
     "editorError.foreground": "#e06c75",
     "editorGroupHeader.noTabsBackground": "#0a0a0a",
-    "editorGutter.addedBackground": "#7fd88f",
+    "editorGutter.addedBackground": "#b8db87",
     "editorGutter.background": "#0a0a0a",
-    "editorGutter.deletedBackground": "#e06c75",
+    "editorGutter.deletedBackground": "#e26a75",
     "editorGutter.modifiedBackground": "#fab283",
     "editorIndentGuide.activeBackground1": "#606060",
     "editorIndentGuide.background1": "#282828",
@@ -181,15 +181,15 @@
     "breadcrumb.foreground": "#808080",
     "breadcrumb.focusForeground": "#eeeeee",
     "breadcrumb.activeSelectionForeground": "#fab283",
-    "gitDecoration.addedResourceForeground": "#7fd88f",
-    "gitDecoration.deletedResourceForeground": "#e06c75",
+    "gitDecoration.addedResourceForeground": "#b8db87",
+    "gitDecoration.deletedResourceForeground": "#e26a75",
     "gitDecoration.ignoredResourceForeground": "#606060",
     "gitDecoration.modifiedResourceForeground": "#fab283",
     "gitDecoration.untrackedResourceForeground": "#56b6c2",
-    "diffEditor.insertedTextBackground": "#20303b99",
-    "diffEditor.removedTextBackground": "#37222c99",
-    "diffEditorGutter.insertedLineBackground": "#1b2b34",
-    "diffEditorGutter.removedLineBackground": "#2d1f26",
+    "diffEditor.insertedTextBackground": "#b8db8726",
+    "diffEditor.removedTextBackground": "#e26a7526",
+    "diffEditorGutter.insertedLineBackground": "#b8db8733",
+    "diffEditorGutter.removedLineBackground": "#e26a7533",
     "settings.headerForeground": "#fab283",
     "settings.modifiedItemIndicator": "#fab283",
     "welcomePage.progress.background": "#1e1e1e",
@@ -333,7 +333,7 @@
         "markup.diff.header.to-file"
       ],
       "settings": {
-        "foreground": "#7fd88f"
+        "foreground": "#b8db87"
       }
     },
     {
@@ -342,7 +342,7 @@
         "markup.diff.header.from-file"
       ],
       "settings": {
-        "foreground": "#e06c75"
+        "foreground": "#e26a75"
       }
     },
     {
