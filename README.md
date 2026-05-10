@@ -1,7 +1,6 @@
 # OpenCode Theme for VS Code
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/jackrobertscott.opencode-vscode-theme?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/jackrobertscott.opencode-vscode-theme?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme)
+[![Marketplace](https://img.shields.io/badge/Marketplace-v0.1.6-fab283?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme)
 [![License](https://img.shields.io/badge/license-MIT-fab283?style=flat-square)](LICENSE)
 
 An unofficial VS Code theme inspired by OpenCode's default dark interface: near-black surfaces, warm peach accents, purple keywords, cyan operators and properties, green strings, yellow types, and red variables/errors.

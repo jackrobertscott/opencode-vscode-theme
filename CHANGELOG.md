@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- Replaced retired Visual Studio Marketplace Shields badges with supported static badges.
+
 ## 0.1.5
 
 - Added marketplace preview screenshots to show the theme before installation.
