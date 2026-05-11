@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.8
+
+- Refined the `OpenCode Vibrant` syntax palette with more cohesive OKLCH color relationships while preserving the OpenCode app background.
+- Reduced Vibrant diff and validation background intensity so text remains easier to read.
+- Updated README guidance for the balanced Vibrant variant.
+
 ## 0.1.7
 
 - Added the `OpenCode Vibrant` theme variant with brighter syntax colors and stronger diff backgrounds.

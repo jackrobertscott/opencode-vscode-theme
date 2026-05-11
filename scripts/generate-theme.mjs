@@ -300,70 +300,81 @@ function buildVscodeTheme(name, c) {
 }
 
 function createVibrantTheme(theme) {
+  const harmony = createVibrantHarmony(theme)
+
   return {
     ...theme,
-    text: increaseNeutralContrast(theme.text, 0.96),
-    textMuted: increaseNeutralContrast(theme.textMuted, 0.69),
-    primary: vibrantForeground(theme.primary),
-    primaryActive: vibrantForeground(theme.primaryActive, { lightness: 0.82, maxLightness: 0.84 }),
-    secondary: vibrantForeground(theme.secondary),
-    accent: vibrantForeground(theme.accent),
-    info: vibrantForeground(theme.info),
-    success: vibrantForeground(theme.success),
-    warning: vibrantForeground(theme.warning),
-    error: vibrantForeground(theme.error),
-    syntaxComment: increaseNeutralContrast(theme.syntaxComment, 0.68),
-    syntaxKeyword: vibrantForeground(theme.syntaxKeyword),
-    syntaxFunction: vibrantForeground(theme.syntaxFunction),
-    syntaxString: vibrantForeground(theme.syntaxString),
-    syntaxNumber: vibrantForeground(theme.syntaxNumber),
-    syntaxType: vibrantForeground(theme.syntaxType),
-    syntaxVariable: vibrantForeground(theme.syntaxVariable),
-    syntaxOperator: vibrantForeground(theme.syntaxOperator),
-    syntaxPunctuation: increaseNeutralContrast(theme.syntaxPunctuation, 0.94),
-    markdownHeading: vibrantForeground(theme.markdownHeading),
-    markdownStrong: increaseNeutralContrast(theme.markdownStrong, 0.96),
-    markdownEmph: vibrantForeground(theme.markdownEmph),
-    markdownListItem: vibrantForeground(theme.markdownListItem),
-    markdownCode: vibrantForeground(theme.markdownCode),
-    markdownCodeBlock: vibrantForeground(theme.markdownCodeBlock),
-    markdownLink: vibrantForeground(theme.markdownLink),
-    markdownLinkText: vibrantForeground(theme.markdownLinkText),
-    markdownBlockQuote: vibrantForeground(theme.markdownBlockQuote),
-    diffAdded: vibrantForeground(theme.diffAdded),
-    diffRemoved: vibrantForeground(theme.diffRemoved),
-    diffContext: vibrantForeground(theme.diffContext),
-    diffHighlightAdded: vibrantForeground(theme.diffHighlightAdded, { lightness: 0.79, maxLightness: 0.82 }),
-    diffHighlightRemoved: vibrantForeground(theme.diffHighlightRemoved, { lightness: 0.76, maxLightness: 0.8 }),
-    diffHunkHeader: vibrantForeground(theme.diffHunkHeader),
-    diffLineNumber: increaseNeutralContrast(theme.diffLineNumber, 0.7),
-    diffAddedBg: vibrantBackground(theme.diffAddedBg),
-    diffRemovedBg: vibrantBackground(theme.diffRemovedBg),
+    text: harmony.neutralForeground(0.96, 0.006),
+    textMuted: harmony.neutralForeground(0.68, 0.012),
+    primary: vibrantForeground(theme.primary, { lightness: 0.74, maxLightness: 0.77, chroma: 0.18, maxChroma: 0.21 }),
+    primaryActive: vibrantForeground(theme.primaryActive, { lightness: 0.81, maxLightness: 0.83, chroma: 0.15, maxChroma: 0.18 }),
+    secondary: vibrantForeground(theme.secondary, { lightness: 0.73, maxLightness: 0.76, chroma: 0.17, maxChroma: 0.2 }),
+    accent: vibrantForeground(theme.accent, { lightness: 0.75, maxLightness: 0.78, chroma: 0.18, maxChroma: 0.21 }),
+    info: vibrantForeground(theme.info, { lightness: 0.72, maxLightness: 0.75, chroma: 0.15, maxChroma: 0.18 }),
+    success: vibrantForeground(theme.success, { lightness: 0.72, maxLightness: 0.75, chroma: 0.16, maxChroma: 0.19 }),
+    warning: vibrantForeground(theme.warning, { lightness: 0.74, maxLightness: 0.77, chroma: 0.16, maxChroma: 0.19 }),
+    error: vibrantForeground(theme.error, { lightness: 0.73, maxLightness: 0.76, chroma: 0.17, maxChroma: 0.2 }),
+    syntaxComment: harmony.neutralForeground(0.66, 0.018),
+    syntaxKeyword: vibrantForeground(theme.syntaxKeyword, { lightness: 0.75, maxLightness: 0.78, chroma: 0.18, maxChroma: 0.21 }),
+    syntaxFunction: vibrantForeground(theme.syntaxFunction, { lightness: 0.74, maxLightness: 0.77, chroma: 0.18, maxChroma: 0.21 }),
+    syntaxString: vibrantForeground(theme.syntaxString, { lightness: 0.72, maxLightness: 0.75, chroma: 0.16, maxChroma: 0.19 }),
+    syntaxNumber: vibrantForeground(theme.syntaxNumber, { lightness: 0.74, maxLightness: 0.77, chroma: 0.15, maxChroma: 0.18 }),
+    syntaxType: vibrantForeground(theme.syntaxType, { lightness: 0.75, maxLightness: 0.78, chroma: 0.16, maxChroma: 0.19 }),
+    syntaxVariable: vibrantForeground(theme.syntaxVariable, { lightness: 0.76, maxLightness: 0.79, chroma: 0.14, maxChroma: 0.17 }),
+    syntaxOperator: vibrantForeground(theme.syntaxOperator, { lightness: 0.73, maxLightness: 0.76, chroma: 0.14, maxChroma: 0.17 }),
+    syntaxPunctuation: harmony.neutralForeground(0.9, 0.01),
+    markdownHeading: vibrantForeground(theme.markdownHeading, { lightness: 0.76, maxLightness: 0.79, chroma: 0.17, maxChroma: 0.2 }),
+    markdownStrong: harmony.neutralForeground(0.96, 0.006),
+    markdownEmph: vibrantForeground(theme.markdownEmph, { lightness: 0.75, maxLightness: 0.78, chroma: 0.17, maxChroma: 0.2 }),
+    markdownListItem: vibrantForeground(theme.markdownListItem, { lightness: 0.74, maxLightness: 0.77, chroma: 0.16, maxChroma: 0.19 }),
+    markdownCode: vibrantForeground(theme.markdownCode, { lightness: 0.72, maxLightness: 0.75, chroma: 0.16, maxChroma: 0.19 }),
+    markdownCodeBlock: vibrantForeground(theme.markdownCodeBlock, { lightness: 0.72, maxLightness: 0.75, chroma: 0.16, maxChroma: 0.19 }),
+    markdownLink: vibrantForeground(theme.markdownLink, { lightness: 0.74, maxLightness: 0.77, chroma: 0.18, maxChroma: 0.21 }),
+    markdownLinkText: vibrantForeground(theme.markdownLinkText, { lightness: 0.74, maxLightness: 0.77, chroma: 0.16, maxChroma: 0.19 }),
+    markdownBlockQuote: vibrantForeground(theme.markdownBlockQuote, { lightness: 0.7, maxLightness: 0.73, chroma: 0.12, maxChroma: 0.15 }),
+    diffAdded: vibrantForeground(theme.diffAdded, { lightness: 0.72, maxLightness: 0.75, chroma: 0.15, maxChroma: 0.18 }),
+    diffRemoved: vibrantForeground(theme.diffRemoved, { lightness: 0.72, maxLightness: 0.75, chroma: 0.16, maxChroma: 0.19 }),
+    diffContext: vibrantForeground(theme.diffContext, { lightness: 0.71, maxLightness: 0.74, chroma: 0.13, maxChroma: 0.16 }),
+    diffHighlightAdded: vibrantForeground(theme.diffHighlightAdded, { lightness: 0.78, maxLightness: 0.81, chroma: 0.15, maxChroma: 0.18 }),
+    diffHighlightRemoved: vibrantForeground(theme.diffHighlightRemoved, { lightness: 0.75, maxLightness: 0.79, chroma: 0.16, maxChroma: 0.19 }),
+    diffHunkHeader: vibrantForeground(theme.diffHunkHeader, { lightness: 0.73, maxLightness: 0.76, chroma: 0.15, maxChroma: 0.18 }),
+    diffLineNumber: harmony.neutralForeground(0.69, 0.012),
+    diffAddedBg: vibrantBackground(theme.diffAddedBg, { lightness: 0.22, chroma: 0.035, maxChroma: 0.05 }),
+    diffRemovedBg: vibrantBackground(theme.diffRemovedBg, { lightness: 0.22, chroma: 0.035, maxChroma: 0.05 }),
     diffContextBg: increaseNeutralContrast(theme.diffContextBg, 0.16),
-    diffAddedLineNumberBg: vibrantBackground(theme.diffAddedBg, { lightness: 0.24 }),
-    diffRemovedLineNumberBg: vibrantBackground(theme.diffRemovedBg, { lightness: 0.24 }),
-    warningBg: vibrantBackground(theme.warningBg),
+    diffAddedLineNumberBg: vibrantBackground(theme.diffAddedBg, { lightness: 0.2, chroma: 0.032, maxChroma: 0.045 }),
+    diffRemovedLineNumberBg: vibrantBackground(theme.diffRemovedBg, { lightness: 0.2, chroma: 0.032, maxChroma: 0.045 }),
+    warningBg: vibrantBackground(theme.warningBg, { lightness: 0.22, chroma: 0.032, maxChroma: 0.045 }),
   }
 }
 
-function vibrantForeground(hex, { chroma = 0.24, lightness = 0.72, maxLightness = 0.78 } = {}) {
+function createVibrantHarmony(theme) {
+  const hue = hexToOklch(theme.primary).h
+
+  return {
+    surface: (lightness, chroma) => oklchToGamutMappedHex({ l: lightness, c: chroma, h: normalizeHue(hue - 8) }),
+    neutralForeground: (lightness, chroma) => oklchToGamutMappedHex({ l: lightness, c: chroma, h: normalizeHue(hue - 18) }),
+  }
+}
+
+function vibrantForeground(hex, { chroma = 0.18, lightness = 0.72, maxLightness = 0.78, maxChroma = 0.21 } = {}) {
   const oklch = hexToOklch(hex)
   if (oklch.c === 0) return increaseNeutralContrast(hex, lightness)
 
   return oklchToGamutMappedHex({
     l: clamp(oklch.l, lightness, maxLightness),
-    c: Math.max(oklch.c * 2.2, chroma),
+    c: clamp(oklch.c * 1.75, chroma, maxChroma),
     h: oklch.h,
   })
 }
 
-function vibrantBackground(hex, { chroma = 0.075, lightness = 0.27 } = {}) {
+function vibrantBackground(hex, { chroma = 0.035, lightness = 0.22, maxChroma = 0.05 } = {}) {
   const oklch = hexToOklch(hex)
   if (oklch.c === 0) return increaseNeutralContrast(hex, lightness)
 
   return oklchToGamutMappedHex({
     l: Math.max(oklch.l, lightness),
-    c: Math.max(oklch.c * 1.8, chroma),
+    c: clamp(oklch.c * 1.1, chroma, maxChroma),
     h: oklch.h,
   })
 }
