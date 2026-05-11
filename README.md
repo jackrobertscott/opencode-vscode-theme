@@ -1,11 +1,13 @@
 # OpenCode Theme for VS Code
 
-[![Marketplace](https://img.shields.io/badge/Marketplace-v0.1.6-fab283?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme)
+[![Marketplace](https://img.shields.io/badge/Marketplace-v0.1.7-fab283?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme)
 [![License](https://img.shields.io/badge/license-MIT-fab283?style=flat-square)](LICENSE)
 
 An unofficial VS Code theme inspired by OpenCode's default dark interface: near-black surfaces, warm peach accents, purple keywords, cyan operators and properties, green strings, yellow types, and red variables/errors.
 
 Designed for developers who like OpenCode's terminal-first visual language and want the same calm, high-contrast palette across the VS Code editor, sidebar, terminal, panels, quick picker, Git views, and syntax tokens.
+
+Includes both the default `OpenCode` theme and `OpenCode Vibrant`, a higher-contrast variant with brighter syntax colors and stronger diff backgrounds.
 
 ## Preview
 
@@ -19,7 +21,7 @@ Designed for developers who like OpenCode's terminal-first visual language and w
 - Complete workbench coverage for the activity bar, sidebar, tabs, editor groups, panel, status bar, menus, quick input, notifications, and terminal.
 - Syntax highlighting tuned for TypeScript, JavaScript, JSON, CSS, Markdown, Python, Rust, and other common grammars.
 - Semantic token support for modern language servers, including classes, functions, methods, parameters, properties, decorators, and enum members.
-- Diff, merge, Git decoration, overview ruler, and minimap colors tuned to remain readable without overpowering the editor.
+- Diff, merge, Git decoration, overview ruler, and minimap colors tuned to remain readable, with a more contrasted set in the Vibrant variant.
 - Terminal colors mapped to the same palette so command-line work feels consistent with the rest of the UI.
 
 ## Best For
@@ -44,13 +46,13 @@ Designed for developers who like OpenCode's terminal-first visual language and w
 
 ## Installation
 
-Install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme), then select `OpenCode` from `Preferences: Color Theme`.
+Install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jackrobertscott.opencode-vscode-theme), then select `OpenCode` or `OpenCode Vibrant` from `Preferences: Color Theme`.
 
 You can also install a packaged `.vsix` build from this repository with `Extensions: Install from VSIX...`.
 
 ## Development
 
-Theme colors are generated from `scripts/generate-theme.mjs` into `themes/opencode-color-theme.json`.
+Theme colors are generated from `scripts/generate-theme.mjs` into `themes/opencode-color-theme.json` and `themes/opencode-vibrant-color-theme.json`.
 
 ```sh
 npm run generate

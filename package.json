@@ -1,8 +1,8 @@
 {
   "name": "opencode-vscode-theme",
   "displayName": "OpenCode Theme (Unofficial)",
-  "description": "An unofficial VS Code theme inspired by OpenCode's default dark interface and syntax palette.",
-  "version": "0.1.6",
+  "description": "An unofficial VS Code theme pack inspired by OpenCode's default dark interface and syntax palette.",
+  "version": "0.1.7",
   "publisher": "jackrobertscott",
   "license": "MIT",
   "icon": "images/icon.png",
@@ -51,6 +51,11 @@
         "label": "OpenCode",
         "uiTheme": "vs-dark",
         "path": "./themes/opencode-color-theme.json"
+      },
+      {
+        "label": "OpenCode Vibrant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/opencode-vibrant-color-theme.json"
       }
     ]
   }

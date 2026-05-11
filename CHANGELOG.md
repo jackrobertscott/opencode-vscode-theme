@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.7
+
+- Added the `OpenCode Vibrant` theme variant with brighter syntax colors and stronger diff backgrounds.
+- Kept the default `OpenCode` theme generation aligned with the previous palette.
+- Updated extension metadata and README guidance for the two included themes.
+
 ## 0.1.6
 
 - Replaced retired Visual Studio Marketplace Shields badges with supported static badges.
